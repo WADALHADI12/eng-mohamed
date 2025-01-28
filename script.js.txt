@@ -1,0 +1,5 @@
+// يمكنك إضافة تفاعلية باستخدام JavaScript
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // منع إعادة تحميل الصفحة
+    alert('تم إرسال الرسالة بنجاح!');
+});

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- رأس الموقع -->
+    <header>
+        <h1>مرحبًا بكم في موقعي الإلكتروني</h1>
+    </header>
+
+    <!-- قائمة التنقل -->
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <main>
+        <section id="home">
+            <h2>الرئيسية</h2>
+            <p>مرحبًا بكم في الصفحة الرئيسية لموقعنا الإلكتروني.</p>
+        </section>
+
+        <section id="about">
+            <h2>من نحن</h2>
+            <p>نحن شركة متخصصة في تقديم حلول الويب والتكنولوجيا.</p>
+        </section>
+
+        <section id="services">
+            <h2>الخدمات</h2>
+            <ul>
+                <li>تصميم مواقع الويب</li>
+                <li>تطوير تطبيقات الجوال</li>
+                <li>تحسين محركات البحث (SEO)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>اتصل بنا</h2>
+            <form id="contactForm">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- تذييل الموقع -->
+    <footer>
+        <p>© 2023 موقعي الإلكتروني. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- إضافة Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- إضافة Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">موقعي</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="blog" class="py-5">
+    <div class="container">
+        <h2>المدونة</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="صورة المقال 1">
+                    <div class="card-body">
+                        <h5 class="card-title">عنوان المقال 1</h5>
+                        <p class="card-text">محتوى مختصر للمقال الأول.</p>
+                        <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <!-- يمكنك إضافة المزيد من المقالات هنا -->
+        </div>
+    </div>
+</section>
+<form action="contact.php" method="POST">
+    <label for="name">الاسم:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">الرسالة:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit" class="btn btn-primary">إرسال</button>
+</form>
+<meta name="description" content="موقعنا الإلكتروني يقدم حلولًا متكاملة في تصميم المواقع وتطوير التطبيقات.">
+<meta name="keywords" content="تصميم مواقع, تطوير تطبيقات, SEO, برمجة">
+<meta name="author" content="اسمك">
+<!-- إضافة AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- إضافة AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- تهيئة AOS -->
+<script>
+    AOS.init();
+</script>
+<section id="about" data-aos="fade-up">
+    <h2>من نحن</h2>
+    <p>نحن شركة متخصصة في تقديم حلول الويب والتكنولوجيا.</p>
+</section>
